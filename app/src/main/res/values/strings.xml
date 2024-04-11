@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TestArmFlow</string>
-    <string name="googleApi">AIzaSyBcDL8VP4G69GfhbGUHyzWHPMgub7XbQcU</string>
+    <string name="googleApi">YOUR_API_KEY</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="logo">armflow_logo</string>
