@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".welcomeFrag.RegisterPage">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/app_background_light"
+            android:contentDescription="@string/app_name">
+        </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:background="@drawable/rounded_corners3"
+        android:backgroundTint="@color/trans_black"
+        android:orientation="vertical"
+        android:paddingVertical="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-50dp"
+            android:contentDescription="goBack"
+            android:src="@drawable/baseline_keyboard_arrow_left_24" />
+
+        <ImageView
+            android:id="@+id/goBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/af_logo_white"></ImageView>
+
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:letterSpacing="0.1"
+            android:text="Rejestracja"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/dirty_white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:autofillHints="username"
+            android:background="@drawable/custom_text_area"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:hint="Nazwa użytkownika"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/dirty_white"
+            android:textColorHint="@color/dirty_white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/custom_text_area"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawablePadding="10dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/dirty_white"
+            android:textColorHint="@color/dirty_white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="password"
+            android:background="@drawable/custom_text_area"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:hint="Hasło"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="@color/dirty_white"
+            android:textColorHint="@color/dirty_white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FE7D06"
+            android:text="Zarejestruj się"
+            android:textSize="18sp"
+            app:cornerRadius="35dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

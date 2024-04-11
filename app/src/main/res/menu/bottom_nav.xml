@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Główna"
+        android:id="@+id/homePage2"
+        android:icon="@drawable/baseline_home_24" />
+    <item android:title="Czat"
+        android:id="@+id/chatPage3"
+        android:icon="@drawable/baseline_chat_24"/>
+    <item  android:title="Mapa"
+        android:id="@+id/mapsFragment"
+        android:icon="@drawable/baseline_map_24"/>
+    <item android:title="Ćwiczenia"
+        android:id="@+id/exercisesPage2"
+        android:icon="@drawable/dumbbell_1"/>
+    <item android:title="Profil"
+        android:id="@+id/userProfilePage2"
+        android:icon="@drawable/ic_baseline_person_24"/>
+</menu>

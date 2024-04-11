@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".welcomeFrag.LoginPage"
+    android:id="@+id/LoginPage">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_background"
+        android:contentDescription="@string/app_name">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_text_area_less"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:paddingVertical="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/af_logo_white"
+            android:contentDescription="@string/logo">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Logowanie"
+            android:textSize="40sp"
+            android:letterSpacing="0.1"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/dirty_white"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@drawable/custom_text_area"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="10dp"
+            android:hint="E-mail"
+            android:autofillHints="email"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/dirty_white"
+            android:textColorHint="@color/dirty_white" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_text_area"
+            android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+            android:drawablePadding="10dp"
+            android:hint="Hasło"
+            android:autofillHints="password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/dirty_white"
+            android:textColorHint="@color/dirty_white" />
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/crimson"
+            android:text="Zaloguj"
+            android:textSize="18sp"
+            app:cornerRadius="35dp"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/reg_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Nie masz jeszcze konta? Zarejestruj się!"
+            android:textSize="16sp"
+            android:textColor="@color/dirty_white"
+            tools:ignore="HardcodedText">
+
+        </TextView>
+
+    </LinearLayout>
+
+</FrameLayout>

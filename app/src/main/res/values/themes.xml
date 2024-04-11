@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/crimson</item>
+        <item name="colorOnPrimary">@color/dirty_white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomTextAppearance" parent="TextAppearance.MaterialCalendarWidget.Date">
+        <item name="android:textColor">@color/dirty_white</item>
+    </style>
+
+    <style name="CustomTextHeaderAppearance" parent="TextAppearance.MaterialCalendarWidget.Header">
+        <item name="android:textColor">@color/dirty_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomCalendarArrow" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="materialCalendarStyle">@style/CustomMaterialCalendar</item>
+    </style>
+
+    <style name="CustomMaterialCalendar" parent="Widget.MaterialComponents.MaterialCalendar">
+        <item name="android:tint">@color/dirty_white</item>
+    </style>
+
+    <style name="customShape">
+        <item  name="cornerSize">25%</item>
+    </style>
+
+    <style name="roundCorners">
+        <item  name="cornerSize">10%</item>
+    </style>
+
+    <style name="navBarCover">
+        <item name="cornerSize">35dp</item>
+    </style>
+</resources>

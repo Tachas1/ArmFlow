@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chatFrag.ChatPage"
+    android:background="@drawable/home_background_light"
+    android:id="@+id/chat_page_admin">
+
+    <LinearLayout
+        android:id="@+id/chat_buttons_nav"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_corners2"
+        android:backgroundTint="@color/trans_black"
+        android:layout_marginBottom="5dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/chats_button"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:text="Chats"
+            android:background="@drawable/custom_text_area"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/search_button"
+            android:layout_width="180dp"
+            android:layout_height="48dp"
+            android:text="Search"
+            android:background="@drawable/custom_text_area"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginVertical="10dp"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="5dp"
+        android:layout_below="@id/chat_buttons_nav"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/trans_black_less"
+        android:layout_marginBottom="80dp"
+        android:outlineProvider="background"
+        android:clipToOutline="true">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/loginPage">
+
+    <fragment
+        android:id="@+id/loginPage"
+        android:name="com.example.testarmflow.welcomeFrag.LoginPage"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page" >
+        <action
+            android:id="@+id/action_loginPage_to_registerPage"
+            app:destination="@id/registerPage" />
+        <action
+            android:id="@+id/action_loginPage_to_mainHomeActivity"
+            app:destination="@id/mainHomeActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPage"
+        android:name="com.example.testarmflow.welcomeFrag.RegisterPage"
+        android:label="fragment_register_page"
+        tools:layout="@layout/fragment_register_page" >
+        <action
+            android:id="@+id/action_registerPage_to_loginPage"
+            app:destination="@id/loginPage" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.testarmflow.welcomeFrag.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/mainHomeActivity"
+        android:name="com.example.testarmflow.MainHomeActivity"
+        android:label="activity_main_home"
+        tools:layout="@layout/activity_main_home" />
+</navigation>

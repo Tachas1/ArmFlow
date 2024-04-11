@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_home_graph.xml"
+    app:startDestination="@id/homePage2">
+    <fragment
+        android:id="@+id/homePage2"
+        android:name="com.example.testarmflow.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" />
+    <fragment
+        android:id="@+id/chatPage3"
+        android:name="com.example.testarmflow.chatFrag.ChatPage"
+        android:label="fragment_chat_page"
+        tools:layout="@layout/fragment_chat_page" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.testarmflow.chatFrag.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/userProfilePage2"
+        android:name="com.example.testarmflow.UserProfilePage"
+        android:label="fragment_user_profile_page"
+        tools:layout="@layout/fragment_user_profile_page" />
+    <fragment
+        android:id="@+id/exercisesPage2"
+        android:name="com.example.testarmflow.exercFrag.ExercisesPage"
+        android:label="fragment_exercises_page"
+        tools:layout="@layout/fragment_exercises_page" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.testarmflow.mapFrag.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners"
+    android:backgroundTint="@color/trans_dark_blue_less"
+    android:padding="10dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:id="@+id/trainingDayContainer">
+    <TextView
+        android:id="@+id/trainingDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dzień 1"
+        android:textColor="@color/dirty_white"
+        android:textSize="17sp"
+        android:textStyle="bold|italic"/>
+    <ImageView
+        android:id="@+id/trainingDayIcon"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/baseline_fitness_center_24"
+        app:tint="@color/dirty_white"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/trainingDayDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=
+            "> Podciągnięcia nachwytem (4 serie po 12-20 powtórzeń)
+            \n> Przyciąganie na wyciągu z grubym uchwytem (4 serie po 8-12 powtórzeń)
+            \n> Uginanie ramion na wyciągu z ręką opartą o ławeczkę (gruby uchwyt) (4 serie po 8-12 powtórzeń)"
+        android:textColor="@color/dirty_white"
+        android:lineHeight="12pt"
+        android:layout_below="@id/trainingDay"
+        />
+
+</RelativeLayout>
