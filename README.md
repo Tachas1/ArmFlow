@@ -1,0 +1,1 @@
+Please note that the provided code is solely the application logic written in Kotlin and does not include any database content, API keys, or Firebase configuration files. These elements are necessary for the proper functioning of the application but are not included in the code provided.
